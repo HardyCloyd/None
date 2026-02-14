@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop aria-label="Background music">
+        <source src="assets/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Control Button -->
+    <button id="musicToggle" class="music-toggle" onclick="toggleMusic()" aria-label="Toggle background music">
+        <span id="musicIcon" aria-hidden="true">🎵</span>
+    </button>
+
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen active" id="welcomeScreen">
+            <h1 class="fade-in">Maria Cristina Nocos</h1>
+            <div class="big-heart pulse">💜</div>
+            <p class="fade-in-delay">click click click</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content" id="mainContent">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="title">I love you sooo much myloveee</h1>
+                <p class="subtitle" id="dateMessage">Happy Monthsary mylove</p>
+            </header>
+
+            <!-- Photo Slideshow -->
+            <section class="photo-gallery">
+                <h2 class="section-title">Our pictures love 💕</h2>
+                <div class="slideshow-container" role="region" aria-label="Photo slideshow" aria-live="polite">
+                    <div class="slide active">
+                        <img src="assets/1.jpg" alt="Photo 1: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/2.jpg" alt="Photo 2: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/3.jpg" alt="Photo 3: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/4.jpg" alt="Photo 4: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/5.jpg" alt="Photo 5: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/6.jpg" alt="Photo 6: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/7.jpg" alt="Photo 7: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/8.jpg" alt="Photo 8: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/9.jpeg" alt="Photo 9: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/10.jpeg" alt="Photo 10: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/11.jpeg" alt="Photo 11: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/12.jpeg" alt="Photo 12: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/13.jpg" alt="Photo 13: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/14.jpg" alt="Photo 14: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/15.jpg" alt="Photo 15: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/16.jpg" alt="Photo 16: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/17.jpg" alt="Photo 17: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/18.jpg" alt="Photo 18: Our special memory together" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/19.png" alt="Photo 19: Our special memory together" class="slide-image">
+                    </div>
+                    <button class="prev" onclick="changeSlide(-1)" aria-label="Previous photo">&#10094;</button>
+                    <button class="next" onclick="changeSlide(1)" aria-label="Next photo">&#10095;</button>
+                </div>
+                <div class="slideshow-dots" role="navigation" aria-label="Photo navigation dots">
+                    <span class="dot active" onclick="currentSlide(0)" role="button" aria-label="Go to photo 1" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(1)" role="button" aria-label="Go to photo 2" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(2)" role="button" aria-label="Go to photo 3" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(3)" role="button" aria-label="Go to photo 4" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(4)" role="button" aria-label="Go to photo 5" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(5)" role="button" aria-label="Go to photo 6" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(6)" role="button" aria-label="Go to photo 7" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(7)" role="button" aria-label="Go to photo 8" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(8)" role="button" aria-label="Go to photo 9" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(9)" role="button" aria-label="Go to photo 10" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(10)" role="button" aria-label="Go to photo 11" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(11)" role="button" aria-label="Go to photo 12" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(12)" role="button" aria-label="Go to photo 13" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(13)" role="button" aria-label="Go to photo 14" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(14)" role="button" aria-label="Go to photo 15" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(15)" role="button" aria-label="Go to photo 16" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(16)" role="button" aria-label="Go to photo 17" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(17)" role="button" aria-label="Go to photo 18" tabindex="0"></span>
+                    <span class="dot" onclick="currentSlide(18)" role="button" aria-label="Go to photo 19" tabindex="0"></span>
+                </div>
+            </section>
+
+            <!-- Love Letter -->
+            <section class="love-letter">
+                <h2 class="section-title">A Special Message For You</h2>
+                <div class="letter-container">
+                    <div class="letter-content">
+                        <p>Hi love!</p>
+                        <p>Love! Thank you gd love sa tanan-tanan nga ging hatag mo sakon love ha? Sorry gd love kung wala ko mayo ga open simo love. I know nga kabalo ka sang rason kung ngaa love. Kis-a abi love gaka budlayan man ko sa tuod lang pero kaya ko gd maubra simo tanan-tanan nga ara sakun love. Kabalo ko nga ga duda ka sakon bisan wala ko may gina ubra love kag kabalo ko nga hindi gid na madula sa imo love. Pero love hindi mo gd pagkalimptan nga palangga tagid ka love ha?</p>
+                        <p>Sorry love sa tanan-tanan ko gd nga sala nga ging ubra, I know hindi mo ko mapatawad sa cheat love pero ari gd ko para ipakita simo nga mabag-o gd ko. Nag sisi ko sa tanan-tanan nga gng ubra ko tuh love. Kabalo ko hindi mo tuh deserve love. Even though nga kabalo ka nga hindi mo deserve ang gng ubra ko love, ging baton mo ko dyapon sulod sa kabuhi mo love. Bisan hindi ko mahatag tanan sa imo love kag may mga pagkukulang ko sa imo, ara ka dyapon saakon love. Thank you gid love and I am so sorry sa tanan-tanan ko nga pasaway simo kag mga sala love</p>
+                        <p>Tiisa lang pirme pasaway ko simo love ha? hehe. I love you so much my love 💜</p>
+                        <p class="signature">Forever and always yours,<br>Hardy Cloyd Nagnal (love)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Button Section -->
+            <section class="button-section">
+                <div id="valentineButton" class="special-button">
+                    <button class="btn-valentine" onclick="showValentineMessage()">
+                        Click for a Surprise 💜
+                    </button>
+                </div>
+                <div id="monthsaryButton" class="special-button" style="display: none;">
+                    <button class="btn-monthsary" onclick="showMonthsaryMessage()">
+                        Celebrate Our Special Day
+                    </button>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>I Love You So Much Mylove💜</p>
+                <p style="font-size: 0.9rem; margin-top: 10px;">You're my forever and always</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal for surprises -->
+    <div class="modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()" aria-label="Close message">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal" onclick="closeImageModal()" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <span class="image-modal-close" aria-label="Close image viewer">&times;</span>
+        <div class="image-loader" id="imageLoader">
+            <div class="spinner"></div>
+        </div>
+        <img class="image-modal-content" id="modalImage" alt="Enlarged view of our memory photo">
+        <div class="image-counter" id="imageCounter" aria-live="polite">1 / 19</div>
+        <button class="modal-prev" onclick="event.stopPropagation(); navigateModalImage(-1)" aria-label="Previous image">&#10094;</button>
+        <button class="modal-next" onclick="event.stopPropagation(); navigateModalImage(1)" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
